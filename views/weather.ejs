@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<link rel="stylesheet" href="/stylesheets/weather-icons.css" />
+		<link rel="stylesheet" href="/stylesheets/weather.css" />
+		<link rel="stylesheet" href="/stylesheets/common.css" />
+		<link rel="stylesheet" href="/stylesheets/header-buttons.css" />
+		<script src="/javascripts/animate.js"></script>
+		<script src="/javascripts/weather.js"></script>
+		<title>Weather</title>
+	</head>
+	<body>
+		<div id="home-button" class="header-button">
+			<a href="/users" ><img src="/images/home.svg" /></a>
+		</div>
+		<div id="logout-button" class="header-button">
+			<a href="/logout"><img src="/images/logout.svg" /></a>
+		</div>
+		<div id="icon-container"><i class="wi <%= iconName %>"></i></div>
+		<div id="text-basic" class="left">
+			<div>
+				<h1><%= city %></h1>
+				<p><%= time %></p>
+				<p id="weather-description"><%= weatherDescription %></p>
+			</div>
+		</div>
+		<div id="text-extra" class="right">
+			<div>
+				<div id="buttons">
+					<button class="pushed">Temp</button>
+					<button>Moisture</button>
+					<button>Wind</button>
+				</div>
+				<div id="text-temp" class="text-someextra">
+					<p>Current: <%= (temperature - 273.15).toFixed(3) %>&#8451;</p>
+					<p>Maximum: <%= (maxTemperature - 273.15).toFixed(3) %>&#8451;</p>
+					<p>Minimum: <%= (minTemperature - 273.15).toFixed(3) %>&#8451;</p>
+				</div>
+				<div id="text-moisture" class="text-someextra">
+					<p>Humidity: <%= humidity %>%</p>
+					<p>Rain: <%= rain %> mm</p>
+					<p>Snow: <%= snow %> mm</p>
+				</div>
+				<div id="text-wind" class="text-someextra">
+					<p>Speed: <%= windSpeed %> m/s</p>
+					<p>Gust speed: <%= (gustSpeed) ? gustSpeed + " m/s" : "No gust" %></p>
+					<p>Direction: <%= windDirection %>&deg;</p>
+					<p>Pressure: <%= pressure %> hPa</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
