@@ -1,0 +1,54 @@
+.header-button {
+	display: inline-block;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-color: #404080;
+	position: absolute;
+	transition: background-color 0.3s;
+	margin-top: 5px;
+	z-index: 1;
+}
+
+.header-button img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 80%;
+}
+
+#home-button:hover {
+	cursor: pointer;
+	background-color: #8080FF;
+	top: 6.5px;
+}
+
+#logout-button:hover {
+	cursor: pointer;
+	background-color: #8080FF;
+	top: 6.5px;
+}
+
+#home-button:active {
+	background-color: #8080AA;
+	top: 8px;
+	transition: none;
+}
+
+#logout-button:active {
+	background-color: #8080AA;
+	top: 8px;
+	transition: none;
+}
+
+#home-button {
+	float-left;
+	left: 15px;
+	top: 5px;
+}
+
+#logout-button {
+	left: calc(100vw - 80px);
+	top: 5px;
+}
