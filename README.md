@@ -1,5 +1,4 @@
 # WeatherCast
-================
 
 A web application to provide the current weather and 24 hour forecast of almost any city.
 
