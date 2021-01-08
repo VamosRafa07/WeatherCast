@@ -1,0 +1,20 @@
+{
+  "name": "task2",
+  "version": "0.0.1",
+  "description": "weather provider",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arun ramachandran",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "ejs": "^2.3.1",
+    "express": "^4.12.4",
+    "express-session": "^1.11.3",
+    "mongodb": "^2.0.34",
+    "path": "^0.11.14",
+    "sha1": "^1.1.1"
+  }
+}
