@@ -1,0 +1,99 @@
+@media (max-width: 600px) {
+	div.left {
+		float: none;
+		margin: auto;
+	}
+
+	div#text-basic h1 {
+		font-size: 2em;
+	}
+
+	div.right {
+		float: none;
+		margin: auto;
+	}
+
+	#buttons button {
+		margin-bottom: 10px;
+	}
+
+}
+
+@media (min-width: 600px) {
+	div.left {
+		float: left;
+	}
+	div.right {
+		float: right;
+	}
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	background-color: #4480B0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 100%;
+}
+
+div#icon-container {
+	margin-top: 80px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+i {
+	font-size: 12em;
+}
+
+div.left {
+	//float: left;
+}
+
+div.right {
+	//float: right;
+}
+
+div#text-basic {
+	margin-top: 30px;
+	width: 48%;
+	color: white;
+	font-weight: 100;
+}
+
+div#text-basic>div {
+	text-align: center;
+}
+
+div#text-extra {
+	width: 48%;
+	margin-top: 50px;
+	color: white;
+}
+
+#text-basic h1 {
+	font-size: 5em;
+	font-weight: 100;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+div#text-basic p {
+	margin-top: 5px;
+}
+
+div#text-basic p#weather-description:first-letter {
+	text-transform: uppercase;
+}
+
+div.text-someextra {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1.2em;
+	padding-top: 1px;
+}
+
+div#text-extra div.text-someextra:not(#text-temp) {
+	display: none;
+}
