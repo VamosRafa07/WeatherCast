@@ -1,0 +1,92 @@
+@media (max-width: 400px) {
+	form .left {
+		display: block;
+	}
+	form .right {
+		display: block;
+		width: 95%;
+	}
+
+	form#register div:nth-child(4) label {
+		line-height: 30px;
+		margin: 20px 0;
+	}
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, sans-serif;
+	background-color: #F0F0F0;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 100;
+}
+
+form {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 4em;
+}
+
+fieldset div {
+	width: 100%;
+}
+
+.left {
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.right {
+	width: 30%;
+	display: inline-block;
+}
+
+button {
+	width: 108px;
+	background-color: #40C080;
+	border: 0;
+	border-radius: 3px;
+	font-size: 1.2em;
+	color: white;
+	transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+	margin-top: 1em 0;
+}
+
+div.buttons {
+	text-align: center;
+}
+
+button:hover {
+	top: 1px;
+	cursor: pointer;
+	background-color: #80FFB0;
+}
+
+button:active {
+	top: 2px;
+	background-color: #208040;
+	outline: none;
+}
+
+div#switch-form {
+	margin-top: 2em;
+}
+
+form#register {
+	display: none;
+}
+
+#switch-form div.invisible {
+	display: none;
+}
