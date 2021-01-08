@@ -1,0 +1,141 @@
+@media (max-width: 500px) {
+	#header-greeting {
+		display: none;
+	}
+
+	.button-header {
+		display: inline-block;
+	}
+
+	#header-button-area {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	form span {
+		display: block;
+	}
+}
+
+@media (min-width: 500px) {
+	#header-greeting {
+		display: inline-block;
+	}
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+
+#header {
+	width: 100%;
+	height: 65px;
+	padding-top: 4px;
+	top: 0px;
+	position: fixed;
+	background-color: #404080;
+	z-index: 1;
+	color: white;
+}
+
+#header-greeting {
+	font-size: 1.5em;
+	margin-left: 2%;
+	margin-top: 10px;
+}
+
+#header-button-area {
+	width: 187px;
+}
+
+.button-header {
+	line-height: 50px;
+	height: 55px;
+	width: 55px;
+	padding: 2px;
+	border-radius: 0.2em;
+	position: relative;
+	float: right;
+	transition: background-color 0.3s;
+}
+
+.button-header img {
+	height: 100%;
+	vertical-align: center;
+}
+
+.button-header:hover{
+	cursor: pointer;
+	background-color: #8080FF;
+	top: 1.5px;
+}
+
+.button-header:active {
+	background-color: #8080AA;
+	top: 3px;
+	transition: none;
+}
+
+#logout-button {
+	right: 2%;
+}
+
+#history-button {
+	right: 4%;
+}
+
+#search-button {
+	right: 6%;
+}
+
+#page-container {
+	margin-top: 110px;
+}
+
+form {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 4em;
+	text-align: center;
+}
+
+form input[type="radio"] {
+	margin: 0 10px 0 10px;
+}
+
+#history-pane {
+	text-align: center;
+	display: none;
+}
+
+#history-pane h1 {
+	text-align: center;
+	font-size: 4em;
+	font-weight: 100;
+	color: #202020;
+}
+
+#history-pane span {
+	text-transform: capitalize;
+}
+
+#history-pane p a {
+	position: relative;
+	transition: color 0.5s;
+}
+
+#history-pane p a:hover {
+	color: green;
+	top: 1px;
+}
+
+#history-pane p a:active {
+	color: red;
+	top: 2px;
+	transition: none;
+}
