@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<link rel="stylesheet" href="/stylesheets/forecast.css" />
+		<link rel="stylehseet" href="/sytlesheets/weather-icons.css" />
+		<link rel="stylesheet" href="/stylesheets/common.css" />
+		<link rel="stylesheet" href="/stylesheets/header-buttons.css" />
+		<script src="/javascripts/Chart.js"></script>
+		<script src="/javascripts/animate.js"></script>
+		<script src="/javascripts/forecast.js"></script>
+	</head>
+	<body>
+		<div id="home-button" class="header-button">
+			<a href="/users" ><img src="/images/home.svg" /></a>
+		</div>
+		<div id="logout-button" class="header-button">
+			<a href="/logout"><img src="/images/logout.svg" /></a>
+		</div>
+		<div id="graph-container">
+			<canvas id="graph-temp"></canvas>
+			<canvas id="graph-rain"></canvas>
+			<canvas id="graph-wind"></canvas>
+		</div><br>
+		<div id="graph-tooltip"></div>
+		<div id="text-area">
+			<h1><%= name %></h1>
+		</div>
+		<div id="buttons">
+			<button class="pushed">Temp</button>
+			<button>Rain</button>
+			<button>Wind</button>
+		</div>
+	</body>
+</html>
