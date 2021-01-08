@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>Home</title>
+		<link rel="stylesheet" href="/stylesheets/home.css" />
+		<link rel="stylesheet" href="/stylesheets/common.css" />
+		<script src="/javascripts/animate.js"></script>
+		<script src="/javascripts/home.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div id="header-greeting">Hello, <%= username + "!" %></div>
+			<span id="header-button-area">
+				<a href="/logout"><div id="logout-button" class="button-header"><img src="/images/logout.svg" /></div><a>
+				<div id="history-button" class="button-header"><img src="/images/history.png" /></div>
+				<div id="search-button" class="button-header current"><img src="/images/search.png" /></div>
+			</span>
+		</div>
+		<div id="page-container">
+			<div id="search-pane">
+				<form action="users/search" method="get">
+					<div><span><input type="radio" name="search-type" value="weather" required>Weather</input></span>
+					<span><input type="radio" name="search-type" value="forecast" required>Forecast</input><span></div>
+					<div><label>City: </label><input type="text" name="city" required></input></div>
+					<button type="submit">Search</button>
+				</form>
+			</div>
+			<div id="history-pane">
+				<h1>Search history:</h1>
+				<% searches.forEach(function (search) {%>
+				<p><a href="<%= '/users/' + search.searchType + '?city=' + search.city %>"><span><%= search.searchType %></span> of <span><%= search.city %></a></p>
+				<% }) %>
+			</div>
+		</div>
+	</body>
+</html>
