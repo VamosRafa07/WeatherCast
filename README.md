@@ -19,7 +19,8 @@ to the login page. Note that the time shown on the weather page is the time when
 current time**. All times displayed in the site are converted to the time zone your device uses.
 
 
-## Routes
+**Routes**
+**------**
 
 * /: Login page.
 * /login: Posting login information.
