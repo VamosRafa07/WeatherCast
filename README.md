@@ -20,7 +20,6 @@ current time**. All times displayed in the site are converted to the time zone y
 
 
 **Routes**
-**------**
 
 * /: Login page.
 * /login: Posting login information.
@@ -34,7 +33,6 @@ current time**. All times displayed in the site are converted to the time zone y
 
 
 # Collections
-# -----------
 
 On running the initialization script, a database named weatherProvider with three collections are created: weather, forecast and users. weather and forecast store information retrieved from the API about the weathers and forecasts respectively of the cities searched for by users. Each document in weather expires in an hour and the ones in forecast expire in 12 hours. The users collection stores the usernames, passwords (hashed) and search histories of each user in separate documents.
 
